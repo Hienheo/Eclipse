@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="GAME_OVER"/>
+		<list key="findhistory">
+			<item value="GAME_OVER"/>
+			<item value="GAME_CLEAR"/>
+			<item value="level"/>
+			<item value="level++"/>
+			<item value="allBlocksCleared"/>
+			<item value="block"/>
+			<item value="getBall"/>
+			<item value="MainPanel"/>
+			<item value="ballX"/>
+			<item value="lives"/>
+			<item value="score"/>
+			<item value="levelGame.setLevel"/>
+			<item value="levelGame.setLevel(level)"/>
+			<item value="GAME_OVẺ"/>
+			<item value="startGame"/>
+		</list>
+		<list key="replacehistory">
+			<item value="List"/>
+			<item value="backSound"/>
+			<item value="next"/>
+			<item value="background"/>
+			<item value="block"/>
+			<item value="startGame"/>
+			<item value="MainPanel.blockH"/>
+			<item value="MainPanel.blockW"/>
+			<item value="HEIGHT"/>
+			<item value="WIDTH"/>
+			<item value="ball.SIZE"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1280"/>
+		<item key="DIALOG_Y_ORIGIN" value="417"/>
+		<item key="DIALOG_WIDTH" value="511"/>
+		<item key="DIALOG_HEIGHT" value="515"/>
+		<item key="DIALOG_FONT_NAME" value="1|Yu Gothic UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Yu Gothic UI"/>
+	</section>
+</section>

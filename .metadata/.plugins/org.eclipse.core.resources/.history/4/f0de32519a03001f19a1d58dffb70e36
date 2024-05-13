@@ -1,0 +1,66 @@
+package BlocKuzushi;
+
+public class LevelGame {
+	public static final int MAX_LEVEL = 3;
+    private int level;
+    private Block[] blocks;
+    public Block[] getBlocks() {
+        return blocks;
+    }
+
+    public int getLevel() {	
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+        switch (level) {
+            case 1:
+                setupLevel1();
+                break;
+            case 2:
+                setupLevel2();
+                break;
+            case 3:
+                setupLevel3();
+                break;
+        }
+    }
+
+    private void setupLevel1() {
+        blocks = new Block[2 * 7];
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 7; j++) {
+                int x = j * Block.WIDTH + Block.WIDTH;
+                int y = i * Block.HEIGHT + Block.HEIGHT;
+                String color = (i + j) % 2 == 0 ? "blue" : "red";
+                blocks[i * 7 + j] = new Block(x, y, color);
+            }
+        }
+    }
+
+
+    private void setupLevel2() {
+        blocks = new Block[4 * 7];
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 7; j++) {
+                int x = j * Block.WIDTH + Block.WIDTH;
+                int y = i * Block.HEIGHT + Block.HEIGHT;
+                String color = (i + j) % 3 == 0 ? "blue" : "red";
+                blocks[i * 7 + j] = new Block(x, y, color);
+            }
+        }
+    }
+
+    private void setupLevel3() {
+        blocks = new Block[4 * 7];
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 7; j++) {
+                int x = j * Block.WIDTH + Block.WIDTH;
+                int y = i * Block.HEIGHT + Block.HEIGHT;
+                String color = (i + j) % 5 == 0 ? "blue" : "red";
+                blocks[i * 7 + j] = new Block(x, y, color);
+            }
+        }
+    }
+}
